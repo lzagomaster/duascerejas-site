@@ -53,3 +53,88 @@
     update();
   });
 })();
+// ===== HERO SLIDER =====
+(function () {
+  const slider = document.querySelector("[data-hero-slider]");
+  if (!slider) return;
+
+  const intervalMs = parseInt(slider.getAttribute("data-interval") || "3500", 10);
+  const slides = Array.from(slider.querySelectorAll(".heroSlide"));
+  const dotsWrap = slider.querySelector(".heroDots");
+  if (slides.length <= 1 || !dotsWrap) return;
+
+  let idx = slides.findIndex(s => s.classList.contains("is-active"));
+  if (idx < 0) idx = 0;
+
+  const dots = slides.map((_, i) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "heroDot" + (i === idx ? " is-active" : "");
+    b.setAttribute("aria-label", `Ir para destaque ${i + 1}`);
+    b.addEventListener("click", () => {
+      setActive(i);
+      restart();
+    });
+    dotsWrap.appendChild(b);
+    return b;
+  });
+
+  function setActive(i) {
+    slides[idx].classList.remove("is-active");
+    dots[idx].classList.remove("is-active");
+    idx = i;
+    slides[idx].classList.add("is-active");
+    dots[idx].classList.add("is-active");
+  }
+
+  function next() {
+    setActive((idx + 1) % slides.length);
+  }
+
+  let timer = null;
+  let paused = false;
+
+  function start() {
+    if (timer) return;
+    timer = setInterval(() => {
+      if (!paused) next();
+    }, intervalMs);
+  }
+  function stop() {
+    if (!timer) return;
+    clearInterval(timer);
+    timer = null;
+  }
+  function restart() {
+    stop();
+    start();
+  }
+
+  // pausa quando o usuário está interagindo
+  slider.addEventListener("mouseenter", () => paused = true);
+  slider.addEventListener("mouseleave", () => paused = false);
+  slider.addEventListener("focusin", () => paused = true);
+  slider.addEventListener("focusout", () => paused = false);
+
+  // swipe no celular
+  let x0 = null;
+  slider.addEventListener("touchstart", (e) => {
+    x0 = e.touches && e.touches[0] ? e.touches[0].clientX : null;
+  }, { passive: true });
+
+  slider.addEventListener("touchend", (e) => {
+    if (x0 == null) return;
+    const x1 = e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : null;
+    if (x1 == null) return;
+
+    const dx = x1 - x0;
+    if (Math.abs(dx) > 35) {
+      if (dx < 0) setActive((idx + 1) % slides.length);
+      else setActive((idx - 1 + slides.length) % slides.length);
+      restart();
+    }
+    x0 = null;
+  }, { passive: true });
+
+  start();
+})();
