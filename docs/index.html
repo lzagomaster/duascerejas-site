@@ -14,15 +14,15 @@
   <div class="bgfx" aria-hidden="true"></div>
 
   <header class="top">
-    <a class="brand" href="">
+    <a class="brand" href="./">
       <span class="brandDot" aria-hidden="true"></span>
       <span>Duas Cerejas</span>
     </a>
 
     <nav class="nav">
-      <a href="">Início</a>
-      <a href="produtos/">Produtos</a>
-      <a href="contato/">Contato</a>
+      <a href="./">Início</a>
+      <a href="./produtos/">Produtos</a>
+      <a href="./contato/">Contato</a>
     </nav>
 
     <button class="btn icon" id="themeToggle" type="button" title="Alternar tema" aria-label="Alternar tema">
@@ -31,65 +31,178 @@
   </header>
 
   <main class="wrap">
-    <section class="hero">
+    <section class="hero heroPoster">
   <div class="heroInner">
-    <span class="kicker">🍒 Duas Cerejas • rápido, lindo e direto</span>
+    <span class="kicker">🍒 Duas Cerejas • Netflix do bolo</span>
     <h1 class="titleXL">
-      Um site <span class="grad">punch</span> pra escolher bolos e doces
-      sem enrolação.
+      Escolha, deslize e <span class="grad">surfe</span> nas opções.
     </h1>
-    <p>
-      Vibe rock, acabamento limpo. Você “surfa” nas opções e pede.
-      (Agora é só a base — depois colocamos vitrine, categorias e botão de WhatsApp.)
-    </p>
+    <p>Escolha a categoria e surfe nos itens. Depois a gente pluga foto, preço e botão de pedido por WhatsApp.</p>
 
     <div class="row">
-      <a class="cta" href="./produtos/">
-        Ver produtos →
-      </a>
-      <a class="cta ghost" href="./contato/">
-        Falar no WhatsApp →
-      </a>
+      <a class="cta" href="./produtos/">Entrar na vitrine →</a>
+      <a class="cta ghost" href="./contato/">Contato →</a>
     </div>
 
-    <div class="hr"></div>
-
-    <div class="badges">
-      <span class="badge">⚡ leve</span>
-      <span class="badge">🧊 dark clean</span>
-      <span class="badge">🎸 punch</span>
-      <span class="badge">📱 mobile first</span>
+    
+    <div class="badges" style="margin-top:14px">
+      <span class="badge">⚡ leve</span><span class="badge">📱 mobile</span><span class="badge">🎸 punch</span><span class="badge">🍒 Duas Cerejas</span>
     </div>
+    
   </div>
 </section>
 
-<section class="grid">
-  <a class="card" href="./produtos/">
-    <h3>Bolos</h3>
-    <p>Vitrine organizada por categorias e tamanhos.</p>
-  </a>
 
-  <a class="card" href="./produtos/">
-    <h3>Doces</h3>
-    <p>Clássicos e especiais, com filtros simples.</p>
-  </a>
+<section class="rowSection">
+  <div class="rowHead">
+    <div>
+      <h2 class="rowTitle">Bolos recheados</h2>
+      <p class="rowSub">Por tamanho, sabor e ocasião.</p>
+    </div>
+    <a class="rowLink" href="./produtos/bolos-recheados/">Ver tudo →</a>
+  </div>
 
-  <a class="card" href="./produtos/">
-    <h3>Kits festa</h3>
-    <p>Escolhe o kit, personaliza e fecha o pedido.</p>
-  </a>
+  <div class="railWrap" data-rail>
+    <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
+    <div class="rail" tabindex="0">
+      <div class="railInner">
+        
+          <a class="tile" href="./p/bolo-abacaxi/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Bolo de Abacaxi</div>
+                <div class="tileDesc">O mais vendido de fruta: suave e refrescante.</div>
+              </div>
+            </div>
 
-  <a class="card" href="./contato/">
-    <h3>Contato</h3>
-    <p>WhatsApp e endereço (vamos colocar certinho já já).</p>
-  </a>
+            
+            <div class="chips tiny">
+              <span class="chip">abacaxi</span><span class="chip">suave</span><span class="chip">fruta</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="./p/chocolate-trufado/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Chocolate Trufado</div>
+                <div class="tileDesc">Intenso, cremoso, clássico que não falha.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">chocolate</span><span class="chip">trufado</span><span class="chip">campeão</span>
+            </div>
+            
+          </a>
+        
+      </div>
+    </div>
+    <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+  </div>
 </section>
+
+<section class="rowSection">
+  <div class="rowHead">
+    <div>
+      <h2 class="rowTitle">Caseiros &amp; fatias</h2>
+      <p class="rowSub">Pra pegar e comer sem pensar.</p>
+    </div>
+    <a class="rowLink" href="./produtos/caseiros-fatia/">Ver tudo →</a>
+  </div>
+
+  <div class="railWrap" data-rail>
+    <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
+    <div class="rail" tabindex="0">
+      <div class="railInner">
+        
+      </div>
+    </div>
+    <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+  </div>
+</section>
+
+<section class="rowSection">
+  <div class="rowHead">
+    <div>
+      <h2 class="rowTitle">Doces</h2>
+      <p class="rowSub">Clássicos e especiais, caixas e combos.</p>
+    </div>
+    <a class="rowLink" href="./produtos/doces/">Ver tudo →</a>
+  </div>
+
+  <div class="railWrap" data-rail>
+    <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
+    <div class="rail" tabindex="0">
+      <div class="railInner">
+        
+      </div>
+    </div>
+    <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+  </div>
+</section>
+
+<section class="rowSection">
+  <div class="rowHead">
+    <div>
+      <h2 class="rowTitle">Kits Festa</h2>
+      <p class="rowSub">Do “não passar em branco” ao “festa feita”.</p>
+    </div>
+    <a class="rowLink" href="./produtos/kits-festa/">Ver tudo →</a>
+  </div>
+
+  <div class="railWrap" data-rail>
+    <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
+    <div class="rail" tabindex="0">
+      <div class="railInner">
+        
+          <a class="tile" href="./p/kit-1-so-para-nao-passar-em-branco/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Kit 1 — Só para não passar em branco</div>
+                <div class="tileDesc">Perfeito pra resolver com estilo.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">kit</span><span class="chip">festa</span><span class="chip">rápido</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="./p/kit-4-festa-feita/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Kit 4 — Festa Feita</div>
+                <div class="tileDesc">A festa já vem pronta: só servir.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">kit</span><span class="chip">festa</span><span class="chip">completo</span>
+            </div>
+            
+          </a>
+        
+      </div>
+    </div>
+    <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+  </div>
+</section>
+
 
   </main>
 
   <footer class="foot">
     <div class="footInner">
-      <small>© 2026 Duas Cerejas • build 2026-02-13 15:04</small>
+      <small>© 2026 Duas Cerejas • build 2026-02-13 15:13</small>
       <small class="muted">Feito pra carregar liso e rápido.</small>
     </div>
   </footer>
