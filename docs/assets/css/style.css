@@ -456,3 +456,31 @@ p{margin:0 0 14px; color:rgba(255,255,255,.78); line-height:1.55}
 .heroSlideImg.heroBoost{
   filter: brightness(1.10) contrast(1.08) saturate(1.18);
 }
+/* FIX: descer o texto (nome/descrição) para cobrir menos a imagem */
+.tileLabel{
+  bottom: 0 !important;          /* quanto menor, mais embaixo */
+  padding: 6px 10px !important;  /* menos altura ocupada */
+}
+
+/* opcional: texto um pouco menor */
+.tileName{
+  font-size: 14px !important;
+  line-height: 1.15 !important;
+}
+
+.tileDesc{
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  margin-top: 3px !important;
+  opacity: .9 !important;
+}
+
+/* opcional: sombra atrás do texto menor, pra aparecer mais a foto */
+.tileShade{
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.60) 0%,
+    rgba(0,0,0,.10) 55%,
+    rgba(0,0,0,0) 100%
+  ) !important;
+}
