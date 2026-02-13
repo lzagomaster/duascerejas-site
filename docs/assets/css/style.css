@@ -442,3 +442,17 @@ p{margin:0 0 14px; color:rgba(255,255,255,.78); line-height:1.55}
   .heroSlider{ min-height: 360px; }
   .heroText{ -webkit-line-clamp: 3; }
 }
+/* Esconder scrollbar do carrossel, mas manter a rolagem funcionando */
+.rail{
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge antigo */
+}
+
+.rail::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  display: none;                /* Chrome/Edge/Safari */
+}
+.heroSlideImg.heroBoost{
+  filter: brightness(1.10) contrast(1.08) saturate(1.18);
+}
