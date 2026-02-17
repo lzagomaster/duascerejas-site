@@ -489,3 +489,51 @@ p{margin:0 0 14px; color:rgba(255,255,255,.78); line-height:1.55}
   .heroSlides{ height: 360px; }
   .heroSlider{ min-height: 360px; }
 }
+/* ===== HERO ocupar a altura da tela (sem depender de 420px) ===== */
+.hero.heroSlider{
+  height: calc(100svh - var(--topH, 64px));  /* 64px é fallback do topo */
+  min-height: 520px;
+}
+.hero.heroSlider .heroSlides{
+  height: 100%;
+}
+
+/* (opcional) se quiser bem Apple/Netflix “full bleed”, descomente:
+.hero.heroSlider{
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none;
+}
+*/
+
+/* ===== Transição Apple: seção entra da direita -> esquerda ===== */
+/* Só ativa se o JS ligar o modo "js" no <html> */
+html.js .rowSection{
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity .55s ease, transform .75s cubic-bezier(.2,.8,.2,1);
+  will-change: opacity, transform;
+}
+html.js .rowSection.is-in{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* (opcional) snap leve pra parecer “telas” (Apple vibe) */
+@media (min-width: 900px){
+  html{ scroll-snap-type: y proximity; }
+  .heroSlider, .rowSection{
+    scroll-snap-align: start;
+    scroll-margin-top: var(--topH, 64px);
+  }
+}
+
+/* acessibilidade */
+@media (prefers-reduced-motion: reduce){
+  html.js .rowSection{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

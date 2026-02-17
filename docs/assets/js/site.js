@@ -138,3 +138,36 @@
 
   start();
 })();
+// ===== Apple-like reveal on scroll =====
+(function () {
+  // liga o modo "js" no CSS
+  document.documentElement.classList.add("js");
+
+  // mede a altura do topo sticky e joga numa CSS var (pra Hero ocupar a tela certinho)
+  const top = document.querySelector(".top");
+  if (top) {
+    document.documentElement.style.setProperty("--topH", top.offsetHeight + "px");
+  }
+
+  const sections = Array.from(document.querySelectorAll(".rowSection"));
+  if (!sections.length) return;
+
+  const show = (el) => el.classList.add("is-in");
+
+  // fallback (se browser velho)
+  if (!("IntersectionObserver" in window)) {
+    sections.forEach(show);
+    return;
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) {
+        show(e.target);
+        io.unobserve(e.target); // anima uma vez e pronto
+      }
+    }
+  }, { threshold: 0.18, rootMargin: "0px 0px -10% 0px" });
+
+  sections.forEach((s) => io.observe(s));
+})();
