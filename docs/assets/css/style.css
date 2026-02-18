@@ -579,3 +579,18 @@ html.js .rowSection.is-in{
 .heroProduct .heroImg{
   transform: scale(1.02);
 }
+.heroProduct .heroMedia{
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+}
+.heroProduct .heroMedia::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(90deg, rgba(0,0,0,.75), rgba(0,0,0,.15));
+  pointer-events:none;
+}
+.heroProduct .heroImg{
+  transform: scale(1.02);
+}
