@@ -539,3 +539,28 @@ html.js .rowSection.is-in{
     transition: none;
   }
 }
+.waFloat{
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  background: #25D366;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  text-decoration: none;
+}
+.waFloat span{
+  font-size: 0;
+}
+.waFloat::after{
+  content: "🟢";
+  font-size: 20px;
+}
+.waFloat:hover{
+  transform: translateY(-2px);
+}
