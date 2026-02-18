@@ -221,7 +221,7 @@ p{margin:0 0 14px; color:rgba(255,255,255,.78); line-height:1.55}
   text-decoration:none;
   color:var(--text);
   border-radius:16px;
-  transition: transform .14s ease;
+  transition: transform .45s ease;
 }
 .tile:hover{ transform: translateY(-2px) scale(1.05); z-index:5; }
 
@@ -295,7 +295,7 @@ p{margin:0 0 14px; color:rgba(255,255,255,.78); line-height:1.55}
   place-items:center;
   opacity:0;
   pointer-events:none;
-  transition: opacity .12s ease, transform .12s ease;
+transition: opacity .45s ease, transform .55s ease;
 }
 .railWrap:hover .railBtn{
   opacity:1;
