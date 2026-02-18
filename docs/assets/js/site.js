@@ -171,3 +171,37 @@
 
   sections.forEach((s) => io.observe(s));
 })();
+document.addEventListener("DOMContentLoaded", () => {
+  // pega o "prefixo" certo a partir do link de "Início" no menu (funciona em subpastas)
+  const home = document.querySelector(".nav a[href]");
+  const prefix = home ? home.getAttribute("href") : "./";
+
+  // se algum card estiver linkando para a imagem do Aerado, troca para a página do produto
+  document.querySelectorAll('a[href*="assets/img/bolos/aerado"]').forEach((a) => {
+    a.setAttribute("href", `${prefix}p/aerado/`);
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  // Root (../ ou ./) já existe no seu layout no link da marca
+  const root = document.querySelector("a.brand")?.getAttribute("href") || "./";
+
+  // Se algum card estiver apontando para a imagem do bolo, transforma em /p/<slug>/
+  document.querySelectorAll("a[href]").forEach((a) => {
+    const href = a.getAttribute("href") || "";
+    // só mexe se o link atual estiver indo para um arquivo de imagem
+    if (!href.match(/\.(png|jpg|jpeg|webp)(\?.*)?$/i)) return;
+
+    const img = a.querySelector("img");
+    if (!img) return;
+
+    const src = img.getAttribute("src") || "";
+    // só para imagens de bolos do catálogo
+    if (!src.includes("/assets/img/bolos/") && !src.includes("\\assets\\img\\bolos\\")) return;
+
+    // slug = nome do arquivo (aerado.png => aerado)
+    const file = src.split("/").pop() || "";
+    const slug = file.replace(/\.(png|jpg|jpeg|webp)$/i, "").toLowerCase();
+
+    a.setAttribute("href", `${root}p/${slug}/`);
+  });
+});
