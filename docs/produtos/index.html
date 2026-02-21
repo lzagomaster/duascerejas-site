@@ -6,31 +6,6 @@
   <title>Produtos • Duas Cerejas</title>
   <meta name="theme-color" content="#000000" />
   <link rel="stylesheet" href="../assets/css/style.css" />
-
-  <!-- Busca (visual simples, sem mexer no CSS global) -->
-  <style>
-    .searchBar{ margin:14px 0 24px; }
-    .searchInner{
-      display:flex; gap:10px; align-items:center;
-      padding:10px 12px; border-radius:14px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.10);
-      backdrop-filter: blur(6px);
-    }
-    .searchInput{
-      flex:1; background: transparent; border:0; outline:0;
-      color: inherit; font-size: 15px;
-    }
-    .searchBtn{
-      border:0; cursor:pointer;
-      padding:8px 10px; border-radius:12px;
-      background: rgba(255,255,255,.10);
-      color: inherit;
-    }
-    .searchHint{ margin-top:8px; font-size: 13px; opacity: .8; }
-    .tile.isHidden{ display:none !important; }
-    .rowSection.isEmpty{ display:none !important; }
-  </style>
 </head>
 <body>
   <div class="bgfx" aria-hidden="true"></div>
@@ -52,502 +27,556 @@
 
   <main class="wrap">
     <section class="hero heroPoster">
-      <div class="heroInner">
-        <span class="kicker">Vitrine</span>
-        <h1 class="titleXL">O <span class="grad">Melhor Catálogo</span> de bolo.</h1>
-        <p>Deslize, escolha uma categoria e explore as capas dos bolos.</p>
+  <div class="heroInner">
+    <span class="kicker">Vitrine</span>
+    <h1 class="titleXL">A <span class="grad">Netflix</span> do bolo.</h1>
+    <p>Deslize, escolha uma categoria e explore as capas dos bolos.</p>
 
-        <div class="badges" style="margin-top:14px">
-          <span class="badge">🖤 fundo preto</span><span class="badge">🍒 vermelho Duas Cerejas</span><span class="badge">💚 nosso verde</span><span class="badge">⚡ rápido e leve</span>
-        </div>
+    
+    <div class="badges" style="margin-top:14px">
+      <span class="badge">🖤 fundo preto</span><span class="badge">🍒 vermelho Duas Cerejas</span><span class="badge">💚 nosso verde</span><span class="badge">⚡ rápido e leve</span>
+    </div>
+    
+  </div>
+</section>
 
-        <!-- BUSCA -->
-        <div class="searchBar">
-          <div class="searchInner">
-            <input id="searchBox" class="searchInput" type="search" placeholder="Buscar bolo ou doce (aceita escrita aproximada)…">
-            <button id="clearSearch" class="searchBtn" type="button">Limpar</button>
-          </div>
-          <div id="searchHint" class="searchHint">Dica: tente “morang”, “abacax”, “brigad” etc.</div>
-        </div>
+
+<section class="rowSection">
+  <div class="rowHead">
+    <div>
+      <h2 class="rowTitle">Frutas</h2>
+      <p class="rowSub">Leves, refrescantes e campeões de pedido.</p>
+    </div>
+    <a class="rowLink" href="./frutas/">Ver tudo →</a>
+  </div>
+
+  <div class="railWrap" data-rail>
+    <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
+    <div class="rail" tabindex="0">
+      <div class="railInner">
+        
+          <a class="tile" href="../p/abacaxi-creme-suico/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Abacaxi ao Creme Suíço</div>
+                <div class="tileDesc">Mais cremoso, ainda leve.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">abacaxi</span><span class="chip">cremoso</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/abacaxi-doce-de-leite/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Abacaxi com Doce de Leite</div>
+                <div class="tileDesc">Suave e refrescante, muito pedido.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">abacaxi</span><span class="chip">suave</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/abacaxi-com-ninho/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Abacaxi com Ninho</div>
+                <div class="tileDesc">Equilíbrio perfeito: fruta &#43; leite.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">abacaxi</span><span class="chip">ninho</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/morango-chocolate-branco/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Morango com Chocolate Branco</div>
+                <div class="tileDesc">Doce na medida, visual lindo.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">morango</span><span class="chip">branco</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/morango-doce-de-leite/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Morango com Doce de Leite</div>
+                <div class="tileDesc">Combinação clássica que vende muito.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">morango</span><span class="chip">doce de leite</span>
+            </div>
+            
+          </a>
+        
       </div>
-    </section>
+    </div>
+    <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+  </div>
+</section>
 
-    <!-- FRUTAS -->
-    <section class="rowSection">
-      <div class="rowHead">
-        <div>
-          <h2 class="rowTitle">Frutas</h2>
-          <p class="rowSub">Leves, refrescantes e campeões de pedido.</p>
-        </div>
-        <a class="rowLink" href="./frutas/">Ver tudo →</a>
+<section class="rowSection">
+  <div class="rowHead">
+    <div>
+      <h2 class="rowTitle">Chocolate</h2>
+      <p class="rowSub">Mais intenso, mais “punch”.</p>
+    </div>
+    <a class="rowLink" href="./chocolate/">Ver tudo →</a>
+  </div>
+
+  <div class="railWrap" data-rail>
+    <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
+    <div class="rail" tabindex="0">
+      <div class="railInner">
+        
+          <a class="tile" href="../p/aerado/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Aerado</div>
+                <div class="tileDesc">Mais leve, fácil de comer.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">leve</span><span class="chip">chocolate</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/bombom-branco/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Bombom Branco</div>
+                <div class="tileDesc">Doce e elegante.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">branco</span><span class="chip">bombom</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/floresta-negra/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Floresta Negra</div>
+                <div class="tileDesc">Clássico premium com presença.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">clássico</span><span class="chip">chocolate</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/max-chocolate-supremo/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Max de Chocolate (Supremo)</div>
+                <div class="tileDesc">Chocolate sem dó: forte e cremoso.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">chocolate</span><span class="chip">intenso</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/mousse-de-chocolate/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Mousse de Chocolate</div>
+                <div class="tileDesc">Leve e chocolatudo.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">mousse</span><span class="chip">chocolate</span>
+            </div>
+            
+          </a>
+        
       </div>
+    </div>
+    <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+  </div>
+</section>
 
-      <div class="railWrap" data-rail>
-        <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
-        <div class="rail" tabindex="0">
-          <div class="railInner">
+<section class="rowSection">
+  <div class="rowHead">
+    <div>
+      <h2 class="rowTitle">Clássicos</h2>
+      <p class="rowSub">Tradicionais que sempre funcionam.</p>
+    </div>
+    <a class="rowLink" href="./classicos/">Ver tudo →</a>
+  </div>
 
-            <a class="tile" href="../p/abacaxi-creme-suico/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/abacaxi-creme-suico.png" loading="lazy" alt="Abacaxi ao Creme Suíço">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Abacaxi ao Creme Suíço</div>
-                  <div class="tileDesc">Mais cremoso, ainda leve.</div>
-                </div>
+  <div class="railWrap" data-rail>
+    <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
+    <div class="rail" tabindex="0">
+      <div class="railInner">
+        
+          <a class="tile" href="../p/baba-de-moca/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Baba de Moça</div>
+                <div class="tileDesc">Tradicional com cara de confeitaria.</div>
               </div>
-              <div class="chips tiny">
-                <span class="chip">abacaxi</span><span class="chip">cremoso</span>
-              </div>
-            </a>
+            </div>
 
-            <a class="tile" href="../p/abacaxi-doce-de-leite/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/abacaxi-doce-de-leite.png" loading="lazy" alt="Abacaxi com Doce de Leite">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Abacaxi com Doce de Leite</div>
-                  <div class="tileDesc">Suave e refrescante, muito pedido.</div>
-                </div>
+            
+            <div class="chips tiny">
+              <span class="chip">tradicional</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/brigadeiro-baba-de-moca/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Brigadeiro com Baba de Moça</div>
+                <div class="tileDesc">Combinação brasileira clássica.</div>
               </div>
-              <div class="chips tiny">
-                <span class="chip">abacaxi</span><span class="chip">suave</span>
-              </div>
-            </a>
+            </div>
 
-            <a class="tile" href="../p/abacaxi-com-ninho/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/abacaxi-com-ninho.png" loading="lazy" alt="Abacaxi com Ninho">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Abacaxi com Ninho</div>
-                  <div class="tileDesc">Equilíbrio perfeito: fruta + leite.</div>
-                </div>
+            
+            <div class="chips tiny">
+              <span class="chip">brigadeiro</span><span class="chip">baba de moça</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/doce-leite-com-coco/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Doce de Leite com Coco</div>
+                <div class="tileDesc">Doce de leite &#43; coco, sem erro.</div>
               </div>
-              <div class="chips tiny">
-                <span class="chip">abacaxi</span><span class="chip">ninho</span>
-              </div>
-            </a>
+            </div>
 
-            <a class="tile" href="../p/morango-chocolate-branco/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/morango-chocolate-branco.png" loading="lazy" alt="Morango com Chocolate Branco">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Morango com Chocolate Branco</div>
-                  <div class="tileDesc">Doce na medida, visual lindo.</div>
-                </div>
+            
+            <div class="chips tiny">
+              <span class="chip">doce de leite</span><span class="chip">coco</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/doce-leite-trufa-amendoim/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Doce de Leite, Trufa e Amendoim (Charge)</div>
+                <div class="tileDesc">Mais doce, mais “punch”.</div>
               </div>
-              <div class="chips tiny">
-                <span class="chip">morango</span><span class="chip">branco</span>
-              </div>
-            </a>
+            </div>
 
-            <a class="tile" href="../p/morango-doce-de-leite/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/morango-doce-de-leite.png" loading="lazy" alt="Morango com Doce de Leite">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Morango com Doce de Leite</div>
-                  <div class="tileDesc">Combinação clássica que vende muito.</div>
-                </div>
+            
+            <div class="chips tiny">
+              <span class="chip">trufa</span><span class="chip">amendoim</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/mousse-chocolate-baba-de-moca/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Mousse de Chocolate com Baba de Moça</div>
+                <div class="tileDesc">Choco &#43; baba: cremosidade dupla.</div>
               </div>
-              <div class="chips tiny">
-                <span class="chip">morango</span><span class="chip">doce de leite</span>
-              </div>
-            </a>
+            </div>
 
-          </div>
-        </div>
-        <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+            
+            <div class="chips tiny">
+              <span class="chip">mousse</span><span class="chip">baba de moça</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/olho-de-sogra-com-nozes/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Olho de Sogra com Nozes</div>
+                <div class="tileDesc">Coco &#43; nozes: assinatura clássica.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">coco</span><span class="chip">nozes</span>
+            </div>
+            
+          </a>
+        
       </div>
-    </section>
+    </div>
+    <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+  </div>
+</section>
 
-    <!-- CHOCOLATE -->
-    <section class="rowSection">
-      <div class="rowHead">
-        <div>
-          <h2 class="rowTitle">Chocolate</h2>
-          <p class="rowSub">Mais intenso, mais “punch”.</p>
-        </div>
-        <a class="rowLink" href="./chocolate/">Ver tudo →</a>
+<section class="rowSection">
+  <div class="rowHead">
+    <div>
+      <h2 class="rowTitle">Doces</h2>
+      <p class="rowSub">Docinhos clássicos e campeões de festa.</p>
+    </div>
+    <a class="rowLink" href="./doces/">Ver tudo →</a>
+  </div>
+
+  <div class="railWrap" data-rail>
+    <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
+    <div class="rail" tabindex="0">
+      <div class="railInner">
+        
+          <a class="tile" href="../p/beijinho/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Beijinho</div>
+                <div class="tileDesc">Coco clássico, sem erro.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">coco</span><span class="chip">clássico</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/bicho-de-pe/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Bicho de Pé</div>
+                <div class="tileDesc">Docinho com pegada nostálgica.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">amendoim</span><span class="chip">tradicional</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/brigadeiro/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Brigadeiro</div>
+                <div class="tileDesc">O campeão de vendas de qualquer festa.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">chocolate</span><span class="chip">clássico</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/brigadeiro-branco/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Brigadeiro Branco</div>
+                <div class="tileDesc">Mais suave, muito pedido.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">branco</span><span class="chip">clássico</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/brigadeiro-com-beijinho/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Brigadeiro com Beijinho</div>
+                <div class="tileDesc">Dupla perfeita: choco &#43; coco.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">coco</span><span class="chip">chocolate</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/cajuzinho/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Cajuzinho</div>
+                <div class="tileDesc">Doce com cara de festa.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">amendoim</span><span class="chip">tradicional</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/camafeu/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Camafeu</div>
+                <div class="tileDesc">Mais refinado, presença total na mesa.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">castanhas</span><span class="chip">premium</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/doce-avela-e-castanha/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Doce de Avelã e Castanha</div>
+                <div class="tileDesc">Sabor mais “chique”, bem marcante.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">avelã</span><span class="chip">castanhas</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/ninho/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Ninho</div>
+                <div class="tileDesc">Leite e cremosidade: fácil de vender.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">ninho</span><span class="chip">cremoso</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/olho-de-sogra/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Olho de Sogra</div>
+                <div class="tileDesc">Coco &#43; ameixa: clássico brasileiro.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">coco</span><span class="chip">tradicional</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/strogonoff-com-crispies/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Strogonoff com Crispies</div>
+                <div class="tileDesc">Textura crocante, bem “punch”.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">crocante</span><span class="chip">chocolate</span>
+            </div>
+            
+          </a>
+        
+          <a class="tile" href="../p/surpresa-de-uva/">
+            <div class="tileMedia">
+              <div class="tileGlow"></div>
+              <div class="tileLabel">
+                <div class="tileName">Surpresa de Uva</div>
+                <div class="tileDesc">Uva cremosa, bem disputado na mesa.</div>
+              </div>
+            </div>
+
+            
+            <div class="chips tiny">
+              <span class="chip">uva</span><span class="chip">cremoso</span>
+            </div>
+            
+          </a>
+        
       </div>
+    </div>
+    <button class="railBtn right" type="button" aria-label="Avançar">›</button>
+  </div>
+</section>
 
-      <div class="railWrap" data-rail>
-        <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
-        <div class="rail" tabindex="0">
-          <div class="railInner">
-
-            <a class="tile" href="../p/aerado/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/aerado.png" loading="lazy" alt="Aerado">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Aerado</div>
-                  <div class="tileDesc">Mais leve, fácil de comer.</div>
-                </div>
-              </div>
-              <div class="chips tiny">
-                <span class="chip">leve</span><span class="chip">chocolate</span>
-              </div>
-            </a>
-
-            <a class="tile" href="../p/bombom-branco/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/bombom-branco.png" loading="lazy" alt="Bombom Branco">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Bombom Branco</div>
-                  <div class="tileDesc">Doce e elegante.</div>
-                </div>
-              </div>
-              <div class="chips tiny">
-                <span class="chip">branco</span><span class="chip">bombom</span>
-              </div>
-            </a>
-
-            <a class="tile" href="../p/floresta-negra/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/floresta-negra.png" loading="lazy" alt="Floresta Negra">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Floresta Negra</div>
-                  <div class="tileDesc">Clássico premium com presença.</div>
-                </div>
-              </div>
-              <div class="chips tiny">
-                <span class="chip">clássico</span><span class="chip">chocolate</span>
-              </div>
-            </a>
-
-            <a class="tile" href="../p/max-chocolate-supremo/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/max-chocolate-supremo.png" loading="lazy" alt="Max de Chocolate (Supremo)">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Max de Chocolate (Supremo)</div>
-                  <div class="tileDesc">Chocolate sem dó: forte e cremoso.</div>
-                </div>
-              </div>
-              <div class="chips tiny">
-                <span class="chip">chocolate</span><span class="chip">intenso</span>
-              </div>
-            </a>
-
-            <a class="tile" href="../p/mousse-de-chocolate/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/mousse-de-chocolate.png" loading="lazy" alt="Mousse de Chocolate">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Mousse de Chocolate</div>
-                  <div class="tileDesc">Leve e chocolatudo.</div>
-                </div>
-              </div>
-              <div class="chips tiny">
-                <span class="chip">mousse</span><span class="chip">chocolate</span>
-              </div>
-            </a>
-
-          </div>
-        </div>
-        <button class="railBtn right" type="button" aria-label="Avançar">›</button>
-      </div>
-    </section>
-
-    <!-- CLÁSSICOS -->
-    <section class="rowSection">
-      <div class="rowHead">
-        <div>
-          <h2 class="rowTitle">Clássicos</h2>
-          <p class="rowSub">Tradicionais que sempre funcionam.</p>
-        </div>
-        <a class="rowLink" href="./classicos/">Ver tudo →</a>
-      </div>
-
-      <div class="railWrap" data-rail>
-        <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
-        <div class="rail" tabindex="0">
-          <div class="railInner">
-
-            <a class="tile" href="../p/baba-de-moca/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/baba-de-moca.png" loading="lazy" alt="Baba de Moça">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Baba de Moça</div>
-                  <div class="tileDesc">Tradicional com cara de confeitaria.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">tradicional</span></div>
-            </a>
-
-            <a class="tile" href="../p/brigadeiro-baba-de-moca/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/brigadeiro-baba-de-moca.png" loading="lazy" alt="Brigadeiro com Baba de Moça">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Brigadeiro com Baba de Moça</div>
-                  <div class="tileDesc">Combinação brasileira clássica.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">brigadeiro</span><span class="chip">baba de moça</span></div>
-            </a>
-
-            <a class="tile" href="../p/doce-leite-com-coco/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/doce-leite-com-coco.png" loading="lazy" alt="Doce de Leite com Coco">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Doce de Leite com Coco</div>
-                  <div class="tileDesc">Doce de leite + coco, sem erro.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">doce de leite</span><span class="chip">coco</span></div>
-            </a>
-
-            <a class="tile" href="../p/doce-leite-trufa-amendoim/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/doce-leite-trufa-amendoim.png" loading="lazy" alt="Doce de Leite, Trufa e Amendoim (Charge)">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Doce de Leite, Trufa e Amendoim (Charge)</div>
-                  <div class="tileDesc">Mais doce, mais “punch”.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">trufa</span><span class="chip">amendoim</span></div>
-            </a>
-
-            <a class="tile" href="../p/mousse-chocolate-baba-de-moca/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/mousse-chocolate-baba-de-moca.png" loading="lazy" alt="Mousse de Chocolate com Baba de Moça">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Mousse de Chocolate com Baba de Moça</div>
-                  <div class="tileDesc">Choco + baba: cremosidade dupla.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">mousse</span><span class="chip">baba de moça</span></div>
-            </a>
-
-            <a class="tile" href="../p/olho-de-sogra-com-nozes/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/bolos/olho-de-sogra-com-nozes.png" loading="lazy" alt="Olho de Sogra com Nozes">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Olho de Sogra com Nozes</div>
-                  <div class="tileDesc">Coco + nozes: assinatura clássica.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">coco</span><span class="chip">nozes</span></div>
-            </a>
-
-          </div>
-        </div>
-        <button class="railBtn right" type="button" aria-label="Avançar">›</button>
-      </div>
-    </section>
-
-    <!-- DOCES -->
-    <section class="rowSection">
-      <div class="rowHead">
-        <div>
-          <h2 class="rowTitle">Doces</h2>
-          <p class="rowSub">Docinhos clássicos e campeões de festa.</p>
-        </div>
-        <a class="rowLink" href="./doces/">Ver tudo →</a>
-      </div>
-
-      <div class="railWrap" data-rail>
-        <button class="railBtn left" type="button" aria-label="Voltar">‹</button>
-        <div class="rail" tabindex="0">
-          <div class="railInner">
-
-            <a class="tile" href="../p/beijinho/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/doce-beijinho-5.jpg" loading="lazy" alt="Beijinho">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Beijinho</div>
-                  <div class="tileDesc">Coco clássico, sem erro.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">coco</span><span class="chip">clássico</span></div>
-            </a>
-
-            <a class="tile" href="../p/bicho-de-pe/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/bicho-de-pe-8.jpg" loading="lazy" alt="Bicho de Pé">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Bicho de Pé</div>
-                  <div class="tileDesc">Docinho com pegada nostálgica.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">amendoim</span><span class="chip">tradicional</span></div>
-            </a>
-
-            <a class="tile" href="../p/brigadeiro/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/doce-brigadeiro-5.jpg" loading="lazy" alt="Brigadeiro">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Brigadeiro</div>
-                  <div class="tileDesc">O campeão de vendas de qualquer festa.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">chocolate</span><span class="chip">clássico</span></div>
-            </a>
-
-            <a class="tile" href="../p/brigadeiro-branco/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/brigadeiro-branco-8.jpg" loading="lazy" alt="Brigadeiro Branco">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Brigadeiro Branco</div>
-                  <div class="tileDesc">Mais suave, muito pedido.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">branco</span><span class="chip">clássico</span></div>
-            </a>
-
-            <a class="tile" href="../p/brigadeiro-com-beijinho/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/brigadeiro-com-beijinho-6.jpg" loading="lazy" alt="Brigadeiro com Beijinho">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Brigadeiro com Beijinho</div>
-                  <div class="tileDesc">Dupla perfeita: choco + coco.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">coco</span><span class="chip">chocolate</span></div>
-            </a>
-
-            <a class="tile" href="../p/cajuzinho/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/doce-cajuzinho-5.jpg" loading="lazy" alt="Cajuzinho">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Cajuzinho</div>
-                  <div class="tileDesc">Doce com cara de festa.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">amendoim</span><span class="chip">tradicional</span></div>
-            </a>
-
-            <a class="tile" href="../p/camafeu/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/camafeu-9.jpg" loading="lazy" alt="Camafeu">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Camafeu</div>
-                  <div class="tileDesc">Mais refinado, presença total na mesa.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">castanhas</span><span class="chip">premium</span></div>
-            </a>
-
-            <a class="tile" href="../p/doce-avela-e-castanha/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/doce-avela-e-castanha-5.jpg" loading="lazy" alt="Doce de Avelã e Castanha">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Doce de Avelã e Castanha</div>
-                  <div class="tileDesc">Sabor mais “chique”, bem marcante.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">avelã</span><span class="chip">castanhas</span></div>
-            </a>
-
-            <a class="tile" href="../p/ninho/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/ninho-7.jpg" loading="lazy" alt="Ninho">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Ninho</div>
-                  <div class="tileDesc">Leite e cremosidade: fácil de vender.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">ninho</span><span class="chip">cremoso</span></div>
-            </a>
-
-            <a class="tile" href="../p/olho-de-sogra/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/olho-de-sogra-11.jpg" loading="lazy" alt="Olho de Sogra">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Olho de Sogra</div>
-                  <div class="tileDesc">Coco + ameixa: clássico brasileiro.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">coco</span><span class="chip">tradicional</span></div>
-            </a>
-
-            <a class="tile" href="../p/strogonoff-com-crispies/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/strogonoff-com-crispies-9.jpg" loading="lazy" alt="Strogonoff com Crispies">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Strogonoff com Crispies</div>
-                  <div class="tileDesc">Textura crocante, bem “punch”.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">crocante</span><span class="chip">chocolate</span></div>
-            </a>
-
-            <a class="tile" href="../p/surpresa-de-uva/">
-              <div class="tileMedia">
-                <div class="tileGlow"></div>
-                <img class="tileImg" src="../assets/img/doces/surpresa-de-uva-7.jpg" loading="lazy" alt="Surpresa de Uva">
-                <div class="tileShade"></div>
-                <div class="tileLabel">
-                  <div class="tileName">Surpresa de Uva</div>
-                  <div class="tileDesc">Uva cremosa, bem disputado na mesa.</div>
-                </div>
-              </div>
-              <div class="chips tiny"><span class="chip">uva</span><span class="chip">cremoso</span></div>
-            </a>
-
-          </div>
-        </div>
-        <button class="railBtn right" type="button" aria-label="Avançar">›</button>
-      </div>
-    </section>
 
   </main>
 
   <footer class="foot">
     <div class="footInner">
-      <small>© 2026 Duas Cerejas • build 2026-02-18 11:14</small>
+      <small>© 2026 Duas Cerejas • build 2026-02-21 15:30</small>
     </div>
   </footer>
-
   <a class="waFloat"
      href="https://wa.me/55SEUDDDSEUNUMERO?text=Oi!%20Quero%20fazer%20um%20pedido%20🍒"
      target="_blank" rel="noopener"
@@ -556,114 +585,5 @@
   </a>
 
   <script src="../assets/js/site.js"></script>
-
-  <!-- BUSCA FUZZY -->
-  <script>
-  (function(){
-    const $ = (s, r=document) => r.querySelector(s);
-    const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
-
-    const box = $("#searchBox");
-    const btn = $("#clearSearch");
-    const hint = $("#searchHint");
-    if(!box) return;
-
-    const norm = (s) => (s||"")
-      .toString()
-      .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
-      .toLowerCase().trim();
-
-    function lev(a,b){
-      a = norm(a); b = norm(b);
-      const m=a.length, n=b.length;
-      if(!m) return n; if(!n) return m;
-      const dp = Array.from({length:m+1}, ()=>Array(n+1).fill(0));
-      for(let i=0;i<=m;i++) dp[i][0]=i;
-      for(let j=0;j<=n;j++) dp[0][j]=j;
-      for(let i=1;i<=m;i++){
-        for(let j=1;j<=n;j++){
-          const cost = a[i-1]===b[j-1]?0:1;
-          dp[i][j]=Math.min(
-            dp[i-1][j]+1,
-            dp[i][j-1]+1,
-            dp[i-1][j-1]+cost
-          );
-        }
-      }
-      return dp[m][n];
-    }
-
-    function similarity(q, w){
-      q = norm(q); w = norm(w);
-      if(!q || !w) return 0;
-      if(w.includes(q)) return 1;
-      const d = lev(q, w);
-      return 1 - (d / Math.max(q.length, w.length));
-    }
-
-    function score(query, text){
-      query = norm(query);
-      text  = norm(text);
-      if(!query) return 1;
-      if(text.includes(query)) return 1;
-
-      const tokens = query.split(/\s+/).filter(Boolean);
-      const words  = text.split(/\s+/).filter(Boolean);
-
-      let s = 0;
-      for(const t of tokens){
-        if(text.includes(t)){ s += 1; continue; }
-        let best = 0;
-        for(const w of words){
-          const sim = similarity(t, w);
-          if(sim > best) best = sim;
-          if(best >= 0.92) break;
-        }
-        s += best;
-      }
-      return s / tokens.length;
-    }
-
-    const rows = $$(".rowSection");
-    const tiles = $$(".tile");
-
-    const tileText = new Map();
-    tiles.forEach(t=>{
-      const name = $(".tileName", t)?.textContent || "";
-      const desc = $(".tileDesc", t)?.textContent || "";
-      const chips = $$(".chip", t).map(x=>x.textContent).join(" ");
-      tileText.set(t, `${name} ${desc} ${chips}`);
-    });
-
-    function apply(){
-      const q = box.value;
-      let visibleCount = 0;
-
-      tiles.forEach(t=>{
-        const s = score(q, tileText.get(t) || "");
-        const ok = !q || s >= 0.58; // “aproximado”
-        t.classList.toggle("isHidden", !ok);
-        if(ok) visibleCount++;
-      });
-
-      rows.forEach(r=>{
-        const has = $$(".tile", r).some(t=>!t.classList.contains("isHidden"));
-        r.classList.toggle("isEmpty", !has);
-        if(q && has){
-          const rail = $(".rail", r);
-          if(rail) rail.scrollLeft = 0;
-        }
-      });
-
-      hint.textContent = q
-        ? `Mostrando ${visibleCount} resultado(s) para: “${q}”`
-        : `Dica: tente “morang”, “abacax”, “brigad” etc.`;
-    }
-
-    box.addEventListener("input", apply);
-    btn.addEventListener("click", ()=>{ box.value=""; box.focus(); apply(); });
-    apply();
-  })();
-  </script>
 </body>
 </html>

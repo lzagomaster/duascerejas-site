@@ -5,61 +5,109 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Aerado • Duas Cerejas</title>
   <meta name="theme-color" content="#000000" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 <body>
   <div class="bgfx" aria-hidden="true"></div>
 
   <header class="top">
-    <a class="brand" href="../">
-      <img class="brandLogo" src="../assets/img/logo/cereja.png" alt="Duas Cerejas">
+    <a class="brand" href="../../">
+      <img class="brandLogo" src="../../assets/img/logo/cereja.png" alt="Duas Cerejas">
       <span class="brandText">Duas Cerejas</span>
     </a>
 
     <nav class="nav">
-      <a href="../">Início</a>
-      <a href="../produtos/">Produtos</a>
-      <a href="../contato/">Contato</a>
+      <a href="../../">Início</a>
+      <a href="../../produtos/">Produtos</a>
+      <a href="../../contato/">Contato</a>
     </nav>
 
     <button class="btn icon" id="themeToggle" type="button" title="Alternar tema" aria-label="Alternar tema">☾</button>
   </header>
 
   <main class="wrap">
-    <section class="hero heroProduct">
-  <div class="heroInner heroGrid">
-    <div>
-      <span class="kicker">Chocolate</span>
-      <h1 class="titleXL">Aerado</h1>
-      <p>Mais leve, fácil de comer.</p>
+    <section class="productCine fullBleed">
+  <div class="cineGrid">
+
+    
+    <aside class="cineInfo">
+      <div class="crumbs">
+        <a href="../../produtos/">Produtos</a>
+        <span class="sep">›</span>
+        <a href="../../produtos/chocolate/">Chocolate</a>
+      </div>
+
+      <h1 class="titleXL"><span class="grad">Aerado</span></h1>
+      <p class="lead">Mais leve, fácil de comer.</p>
+
+      <div class="chips">
+        <span class="chip">leve</span><span class="chip">chocolate</span>
+      </div>
+
+      <div class="infoBox">
+        <h3 class="infoTitle">Descrição detalhada</h3>
+
+        
+          <ul class="bullets">
+            <li><b>Perfil:</b> chocolate leve, “some na boca”, perfeito pra quem gosta de sobremesa que não pesa.</li>
+            <li><b>Textura:</b> cremosa e aerada (sensação de mousse + bolo).</li>
+            <li><b>Ocasiões:</b> aniversário, visita em casa, “quero um bolo top sem enjoar”.</li>
+            <li><b>Combina com:</b> café, pós-almoço, e aquele pedaço à noite.</li>
+          </ul>
+
+          <p class="mutedNote">
+            *Exemplo: depois você pode colocar “recheios / camadas / alergênicos” vindo do JSON, mas aqui já deixamos um modelo pronto.
+          </p>
+        
+      </div>
+
+      <div class="infoBox">
+        <h3 class="infoTitle">Tamanhos</h3>
+        <div class="chips">
+          <span class="chip">1kg</span><span class="chip">1,5kg</span><span class="chip">2kg</span>
+        </div>
+      </div>
 
       <div class="row">
         
-          <a class="cta" href="../contato/">Contato →</a>
+          <a class="cta" target="_blank" rel="noopener"
+             href="https://wa.me/55SEUDDDSEUNUMERO?text=Quero%20pedir:%20Aerado">
+            Pedir no WhatsApp
+          </a>
         
-        <a class="cta ghost" href="../produtos/chocolate/">Voltar →</a>
+
+        <a class="cta ghost" href="../../produtos/chocolate/">
+          Ver mais da categoria
+        </a>
       </div>
 
-      
-      <div class="badges" style="margin-top:14px">
-        <span class="badge">1kg</span><span class="badge">1,5kg</span><span class="badge">2kg</span>
-      </div>
-      
+      <a class="backLink" href="../../">← Voltar pro início</a>
+    </aside>
+
+    
+    <div class="cineMedia">
+      <figure class="cineFrame">
+        <img class="cineImg"
+             src="../../assets/img/bolos/aerado.png"
+             alt="Aerado"
+             loading="eager" />
+
+        <div class="cineVignette" aria-hidden="true"></div>
+
+        <figcaption class="cineCaption">
+          <span class="cineCapTitle">Aerado</span>
+          <span class="cineCapSub">Duas Cerejas • assinatura</span>
+        </figcaption>
+      </figure>
     </div>
 
-    <div class="heroMedia">
-      
-        <img class="heroImg" src="../assets/img/bolos/aerado.png" alt="Aerado">
-      
-    </div>
   </div>
 </section>
-
   </main>
 
   <footer class="foot">
     <div class="footInner">
-      <small>© 2026 Duas Cerejas • build 2026-02-18 11:14</small>
+      <small>© 2026 Duas Cerejas • build 2026-02-21 15:30</small>
     </div>
   </footer>
   <a class="waFloat"
@@ -69,6 +117,6 @@
     <span>WhatsApp</span>
   </a>
 
-  <script src="../assets/js/site.js"></script>
+  <script src="../../assets/js/site.js"></script>
 </body>
 </html>
